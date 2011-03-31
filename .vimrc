@@ -167,3 +167,6 @@ autocmd BufRead,BufNewFile *.md setfiletype markdown
 "Cucumber syntax
 autocmd BufRead,BufNewFile *.feature setfiletype cucumber
 autocmd BufRead,BufNewFile *.feature setfiletype cucumber
+
+"set font and font size
+set gfn=Monaco:h16
