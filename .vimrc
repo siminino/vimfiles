@@ -1,3 +1,4 @@
+set term=builtin_ansi
 "Setting VIMHOME
 let $VIMHOME = $HOME."/.vim"
 
@@ -84,8 +85,13 @@ if has("gui_running")
     colorscheme jellybeans
 
     "guifont
-    set guifont=Monaco:h12
+    set guifont=Monaco:h14
 
     set guioptions=egmt
     set fuoptions=maxvert,maxhorz
 endif
+
+"other settings
+"set foldmethod=indent
+set statusline=%<%f\ %h%m%r%=%-14.(%y\ %l,%c%V%)\ %P
+set laststatus=2
