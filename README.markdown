@@ -1,4 +1,4 @@
-#Francisco Souza's vim files.
+#Vinícius Chagas's vim files based on Francisco Souza's vimfiles.
 
 ##Getting started
 
@@ -11,7 +11,7 @@ If you want to use my vimfiles, you'll need to download and install it. Here are
 If you have git installed on your computer, all you need to do is to clone the repository on your ``$VIMHOME``:
 
     $ cd $HOME
-    $ git clone git://github.com/fsouza/vimfiles.git .vim
+    $ git clone git://github.com/viniciuschagas/vimfiles.git .vim
 
 Then enter in the ``.vim`` directory and update the submodules:
 
@@ -33,3 +33,8 @@ all you need to do is create a ``.vimrc`` on your ``$HOME``:
 ###JavaScript lint
 
 In order to use JavaScript lint, you need to add the ``jsl`` executable to your ``PATH``. [Download it](http://javascriptlint.com/download.htm) and add to a directory in your ``PATH``.
+
+####On Mac OS X
+You can use [homebrew](https://github.com/mxcl/homebrew) to install ``jsl`` in your system:
+
+    $ brew install jsl
