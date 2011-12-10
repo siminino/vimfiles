@@ -1,4 +1,4 @@
-#Vinícius Chagas's vim files based on Francisco Souza's vimfiles.
+#Vinícius Chagas's vim files based on [Francisco Souza's](https://github.com/fsouza) vimfiles.
 
 ##Getting started
 
