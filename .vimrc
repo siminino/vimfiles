@@ -69,5 +69,13 @@ noremap <C-k> :m-2<CR>gv=gv
 vnoremap <C-l> xp
 vnoremap <C-h> xhP
 
-"============
-"End mappings
+if has("gui_running")
+    "Colorscheme
+    colorscheme jellybeans
+
+    "guifont
+    set guifont=Monaco:h14
+
+    set guioptions=egmt
+    set fuoptions=maxvert,maxhorz
+endif
