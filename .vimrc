@@ -1,3 +1,4 @@
+set term=builtin_ansi
 "Setting VIMHOME
 let $VIMHOME = $HOME."/.vim"
 
@@ -49,6 +50,7 @@ let g:html_indent_inctags="html,head,body,tbody"
 "==============
 "NERDTree
 nmap <silent> <c-p> :NERDTreeToggle<CR>
+nmap <silent> <S-f> :NERDTreeFind<CR>
 
 " Removes trailing spaces
 function TrimWhiteSpace()
@@ -69,6 +71,9 @@ noremap <C-k> :m-2<CR>gv=gv
 vnoremap <C-l> xp
 vnoremap <C-h> xhP
 
+"============
+"End mappings
+
 if has("gui_running")
     "Colorscheme
     colorscheme jellybeans
@@ -79,3 +84,10 @@ if has("gui_running")
     set guioptions=egmt
     set fuoptions=maxvert,maxhorz
 endif
+
+"Cucumber syntax
+autocmd BufRead,BufNewFile *.feature setfiletype cucumber
+autocmd BufRead,BufNewFile *.feature setfiletype cucumber
+
+"set font and font size
+
