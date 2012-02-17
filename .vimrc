@@ -11,7 +11,7 @@ let $PATH .= ":".$VIMHOME."/python"
 "Loading bundle plugins
 call pathogen#runtime_append_all_bundles()
 
-syntax on
+syntax off
 filetype indent on
 filetype plugin on
 
@@ -21,6 +21,9 @@ set number
 
 "Backspace
 set backspace=2
+
+"linebreak
+set wrap linebreak nolist
 
 "Bad whitespaces
 autocmd BufEnter * highlight BadWhitespace ctermbg=red guibg=red
@@ -47,10 +50,7 @@ let g:html_indent_inctags="html,head,body,tbody"
 "==============
 "NERDTree
 nmap <silent> <c-p> :NERDTreeToggle<CR>
-
-"Tabs navigation
-nmap <C-Tab> gt
-nmap <C-S-Tab> gT
+nmap <silent> <S-f> :NERDTreeFind<CR>
 
 " Removes trailing spaces
 function TrimWhiteSpace()
@@ -70,12 +70,6 @@ noremap <C-k> :m-2<CR>gv=gv
 
 vnoremap <C-l> xp
 vnoremap <C-h> xhP
-
-"Split resizing
-map <C-S-Left> <c-w><
-map <C-S-Right> <c-w>>
-map <C-S-Up> <c-w>-
-map <C-S-Down> <c-w>+
 
 "============
 "End mappings
