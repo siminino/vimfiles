@@ -10,9 +10,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/akitaonrails/snipmate.vim.git
-[submodule "snippets"]
-	path = snippets
-	url = git://github.com/viniciuschagas/snipmate-snippets.git
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = git://github.com/tomtom/tcomment_vim.git
@@ -43,3 +40,9 @@
 [submodule "bundle/html5"]
 	path = bundle/html5
 	url = git://github.com/othree/html5.vim.git
+[submodule "bundle/lusty"]
+	path = bundle/lusty
+	url = git://github.com/sjbach/lusty.git
+[submodule "snippets"]
+	path = snippets
+	url = git://github.com/viniciuschagas/snipmate-snippets.git
